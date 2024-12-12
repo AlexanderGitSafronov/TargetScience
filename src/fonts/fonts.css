@@ -1,0 +1,47 @@
+
+@font-face {
+    font-family: 'Aldrich';
+    src: url('./Aldrich-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Aldrichrus';
+    src: url('./aldrichrus.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+  @font-face {
+    font-family: 'Jost';
+    src: url('./Jost-Light.ttf') format('truetype');
+    font-weight: 300; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('./Jost-Regular.ttf') format('truetype');
+    font-weight: 400; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('./Jost-Medium.ttf') format('truetype');
+    font-weight: 500; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('./Jost-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+

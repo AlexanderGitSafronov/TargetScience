@@ -1,0 +1,39 @@
+.btn_language {
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 17px;
+  width: 104px;
+  height: 40px;
+  border-radius: 60px;
+  position: relative;
+  z-index: 5;
+
+  & span:nth-child(1) {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+  }
+  .svg {
+    transition: all 0.3s ease;
+  }
+  .svgRotate {
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+  }
+}
+
+.closeModal {
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: -1;
+  top: 0%;
+}
+.openModal {
+  opacity: 1;
+  top: 110%;
+  transition: all 0.3s ease;
+  z-index: 2;
+}

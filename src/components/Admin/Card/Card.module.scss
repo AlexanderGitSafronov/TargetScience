@@ -1,0 +1,82 @@
+.card__wrapper {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  row-gap: 10px;
+  padding: 20px;
+
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  height: auto;
+  transition: all 1s ease;
+  background-color: rgba(0, 0, 0, 0.1);
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    label {
+      color: #fff;
+    }
+    input {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+      border-radius: 4px;
+      color: #fff;
+    }
+    textarea {
+      color: #fff;
+    }
+    .text__block {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      .title {
+        font-size: 20px;
+      }
+      .description {
+        max-height: 145px;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      overflow: hidden;
+      .figure {
+        img {
+          width: 100px;
+        }
+      }
+    }
+    .btn__block {
+      display: flex;
+      justify-content: flex-end;
+      column-gap: 10px;
+      button {
+        color: #fff;
+        font-weight: 600;
+        background-color: transparent;
+      }
+      &_delite {
+        background-color: #ab2c1e !important;
+        opacity: 0.6;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &_edit {
+        background-color: #0089ff !important;
+        opacity: 0.6;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &_save {
+        background-color: #088a08 !important;
+      }
+    }
+  }
+}
+.title__dialog h3 {
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 22px;
+}

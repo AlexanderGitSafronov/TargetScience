@@ -1,0 +1,313 @@
+.modal {
+  border-radius: 40px !important;
+
+  background: linear-gradient(
+    235deg,
+    rgba(51, 51, 51, 0.9) 0%,
+    rgba(51, 51, 51, 1) 30%
+  ) !important;
+
+  min-width: 928px;
+
+  @media (max-width: 1024px) {
+    min-width: 300px;
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 540px) {
+    border-radius: 16px !important;
+  }
+
+  .modal_wrapper {
+    position: relative;
+    padding: 20px 40px 40px 40px;
+    @media (max-width: 540px) {
+      padding: 24px 24px 24px 32px;
+    }
+
+    .modal_wrapper_circle_container {
+      position: absolute;
+      left: -30%;
+      bottom: -30%;
+      width: 900px;
+      background: radial-gradient(circle, #e3331f 0%, rgba(51, 51, 51, 0) 60%);
+      opacity: 0.2;
+    }
+
+    .footer_modal {
+      display: flex;
+      justify-content: space-between;
+    }
+    .logo_bg {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 35%;
+      opacity: 40%;
+    }
+    .logo_bg_1 {
+      position: absolute;
+      top: 120px;
+      left: 10px;
+      width: 80px;
+    }
+    .logo_bg_2 {
+      position: absolute;
+      top: 200px;
+      left: 166px;
+      width: 116px;
+    }
+    .logo_bg_3 {
+      position: absolute;
+      top: 325px;
+      left: 25px;
+      width: 116px;
+    }
+    .logo_bg_4 {
+      position: absolute;
+      bottom: 486px;
+      left: 160px;
+      width: 80px;
+    }
+
+    .title {
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(235, 235, 235, 0.4);
+
+      h3 {
+        color: #f5f5f5;
+        font-size: 32px;
+        @media (max-width: 540px) {
+          font-size: 24px;
+        }
+      }
+    }
+    .content_modal {
+      margin-top: 40px;
+      display: flex;
+      justify-content: flex-end;
+
+      @media (max-width: 540px) {
+        margin-top: 24px;
+      }
+
+      .form {
+        width: 520px;
+        position: relative;
+        z-index: 2;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        @media (max-width: 540px) {
+          row-gap: 16px;
+        }
+        .form_field {
+          position: relative;
+          .error {
+            position: absolute;
+
+            transform: translateY(-50%);
+            left: 0;
+            color: #e3331f;
+          }
+        }
+
+        input {
+          padding: 16.5px 24px;
+        }
+        textarea {
+          padding: 0px 12px;
+        }
+        .send_form {
+          background-color: transparent;
+          position: relative;
+          color: #ebebeb;
+          overflow: hidden;
+          height: 56px;
+          font-size: 16px;
+          font-weight: 600;
+          cursor: pointer;
+          margin-top: 16px;
+          .send_form_content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 8px;
+            position: relative;
+            z-index: 3;
+          }
+          .fillEffect {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #e3331f;
+            z-index: 1;
+            transform: scaleX(1);
+            transform-origin: left;
+            transition: all 0.4s ease;
+            opacity: 1;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+          }
+
+          &:hover {
+            color: #fff;
+          }
+
+          &:hover .fillEffect {
+            transform: scaleX(0);
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            opacity: 0;
+          }
+
+          .tl {
+            position: absolute;
+            top: 30px;
+            left: 0;
+          }
+          .tr {
+            position: absolute;
+            top: 30px;
+            right: 0;
+            transform: rotate(90deg);
+          }
+          .bl {
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            transform: rotate(-90deg);
+          }
+          .br {
+            position: absolute;
+            bottom: -30px;
+            right: 0;
+            transform: rotate(180deg);
+          }
+          .tl,
+          .tr,
+          .bl,
+          .br {
+            opacity: 0;
+            transition: all 0.3s ease;
+          }
+
+          &:hover .tl {
+            top: 0px;
+            opacity: 1;
+          }
+
+          &:hover .tr {
+            top: 0px;
+            opacity: 1;
+          }
+
+          &:hover .bl {
+            bottom: 0px;
+            opacity: 1;
+          }
+
+          &:hover .br {
+            bottom: 0px;
+            opacity: 1;
+          }
+        }
+      }
+      h6 {
+        color: #fff;
+      }
+    }
+  }
+}
+.modal_sucsses {
+  background: linear-gradient(
+    235deg,
+    rgba(51, 51, 51, 0.9) 0%,
+    rgba(51, 51, 51, 1) 30%
+  ) !important;
+  padding: 40px 40px;
+  border-radius: 20px;
+  h2,
+  h3 {
+    color: #fff;
+    text-align: center;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+}
+.alert_text {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input.error {
+  border-color: #e3331f;
+}
+
+.input:focus {
+  border-color: #05fd88;
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #ccc;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.label.focused {
+  top: -8px;
+  font-size: 12px;
+  color: #05fd88;
+}
+
+.label.error {
+  color: #e3331f;
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+.textarea.error {
+  border-color: #e3331f;
+}
+
+.textarea:focus {
+  border-color: #05fd88;
+}
+
+.error_message {
+  font-size: 12px;
+  color: #e3331f;
+  margin-top: 4px;
+}

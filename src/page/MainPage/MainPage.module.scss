@@ -1,0 +1,251 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 32px;
+  column-gap: 32px;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 39px;
+
+  padding-bottom: 40px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  @media (max-width: 1440px) {
+    row-gap: 22px;
+    column-gap: 22px;
+  }
+
+  @media (max-width: 599px) {
+    margin-top: 12px;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+  align-items: flex-start;
+  max-width: 1408px;
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+  margin-top: 32px;
+  @media (max-width: 1400px) {
+    padding: 0px 30px;
+  }
+  @media (max-width: 599px) {
+    padding: 0px 10px;
+  }
+}
+.main__wrapper_title {
+  width: 100%;
+  text-align: start;
+  margin-top: 96px;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 1400px) {
+    margin-top: 66px;
+  }
+  @media (max-width: 1037px) {
+    flex-direction: column;
+  }
+  @media (max-width: 599px) {
+    margin-top: 20px;
+  }
+}
+.animated-box {
+  transition: height 1s;
+}
+
+.card__item {
+  transition: height 1s;
+}
+
+.flex__position {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  @media (max-width: 1440px) {
+    row-gap: 22px;
+  }
+}
+
+.item {
+  transition: transform 0.5s;
+}
+
+.main__wrapper {
+  width: 100vw;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.main__wrapper_title h1 {
+  font-size: 96px;
+  line-height: 103px;
+  color: #ebebeb;
+  font-family: Aldrich, serif;
+  @media (max-width: 1400px) {
+    font-size: 76px;
+    line-height: 80px;
+  }
+  @media (max-width: 734px) {
+    font-size: 66px;
+  }
+  @media (max-width: 622px) {
+    font-size: 56px;
+    line-height: 60px;
+  }
+  @media (max-width: 599px) {
+    font-size: 56px;
+
+    padding-right: 100px;
+  }
+  @media (max-width: 495px) {
+    padding-right: 0px;
+  }
+  @media (max-width: 393px) {
+    font-size: 52px;
+  }
+}
+.maint__title_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 359px;
+}
+.maint__title_desc p {
+  font-size: 40px;
+  line-height: 120%;
+  color: #f5f5f5;
+  @media (max-width: 1400px) {
+    font-size: 30px;
+  }
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+  @media (max-width: 599px) {
+    font-size: 18px;
+  }
+}
+.title__block {
+  position: relative;
+  display: inline-block;
+  .btn_main {
+    position: absolute;
+    right: 0px;
+    bottom: 25px;
+    @media (max-width: 1400px) {
+      bottom: 15px;
+      right: -20px;
+    }
+    @media (max-width: 1190px) {
+      right: initial;
+      left: 270px;
+      bottom: initial;
+      top: 50%;
+      transform: translateY(-60%);
+    }
+    @media (max-width: 1037px) {
+      left: 520px;
+
+      bottom: 80px;
+    }
+    @media (max-width: 831px) {
+      left: 280px;
+
+      bottom: 50px;
+    }
+    @media (max-width: 734px) {
+      left: 240px;
+    }
+    @media (max-width: 662px) {
+      bottom: 35px;
+      left: 200px;
+    }
+    @media (max-width: 599px) {
+      top: 89px;
+      right: 40px;
+    }
+    @media (max-width: 495px) {
+      top: 89px;
+      right: 40px;
+    }
+    @media (max-width: 479px) {
+      top: 93px;
+    }
+    @media (max-width: 393px) {
+    }
+  }
+}
+
+.main__wrapper_bg img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: -20%;
+  animation: scales 15s ease-in-out infinite;
+}
+
+@keyframes scales {
+  0% {
+    transform: scale(1);
+    right: -20%;
+  }
+  50% {
+    transform: scale(1.5);
+    right: 0%;
+  }
+
+  100% {
+    transform: scale(1);
+    right: -20%;
+  }
+}

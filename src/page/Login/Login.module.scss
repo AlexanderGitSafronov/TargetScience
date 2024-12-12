@@ -1,0 +1,32 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .form {
+    max-width: 280px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: center;
+    .form__inputs {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      input {
+        color: #fff;
+      }
+      input:-internal-autofill-selected {
+        background-color: transparent !important;
+      }
+    }
+
+    .btn {
+      height: 45px;
+      background-color: #ab2c1e;
+    }
+  }
+}

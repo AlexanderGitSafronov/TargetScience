@@ -1,0 +1,222 @@
+.fon {
+  background: transparent;
+  width: 448px !important;
+  height: 376px !important;
+  overflow: hidden;
+  transition: background 0.3s ease, height 0.3s ease;
+  // opacity: 1;
+  border: 1px solid rgba(235, 235, 235, 0.1);
+  cursor: pointer;
+  border-radius: 24px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(top, #333333, #333333);
+
+  @media (max-width: 1440px) {
+    // width: 348px !important;
+    // padding: 20px 20px 0px 20px;
+  }
+  @media (max-width: 599px) {
+    width: 359px !important;
+    height: 298px !important;
+  }
+
+  .title {
+    color: #f5f5f5;
+    font-size: 32px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    line-height: 112%;
+    margin: 0px;
+    @media (max-width: 1440px) {
+      font-size: 28px;
+    }
+  }
+
+  &:hover .card__wrapper {
+    background: linear-gradient(
+      0deg,
+      rgba(113, 16, 19, 1),
+      rgba(227, 51, 31, 1)
+    ); /* Плавно меняющийся градиент */
+    opacity: 1;
+  }
+  .card__body {
+    position: relative;
+    z-index: 2;
+    padding: 40px 40px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    @media (max-width: 1440px) {
+      padding: 20px 20px 0px 20px;
+      width: 408px !important;
+      row-gap: 20px;
+    }
+    .card__header {
+      display: flex;
+      column-gap: 8px;
+      margin-bottom: 16px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      visibility: hidden;
+      z-index: -1;
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+      @media (max-width: 540px) {
+        padding-right: 50px;
+      }
+      &.visible {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2;
+        position: relative;
+      }
+      & a {
+        padding: 6px 24px;
+        border: 1px solid #f5f5f5;
+        border-radius: 60px;
+        font-size: 14px;
+        color: #f5f5f5;
+      }
+    }
+  }
+  .card__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #333333, #333333);
+    opacity: 0.1;
+    transition: background 0.5s ease, opacity 0.5s ease;
+  }
+
+  .desc {
+    color: #f5f5f5;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .wrapper__desc {
+    max-height: 60px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  .wrapper__desc.expanded {
+    max-height: 500px;
+  }
+
+  .footer__card {
+    margin-top: 100px;
+    position: relative;
+    .card__img {
+      img {
+        transition: opacity 0.5s ease;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        z-index: 1;
+        transform: translate(-30%, 30%);
+        width: 267px;
+        height: 267px;
+        &.fade {
+          opacity: 0;
+        }
+        &.fadeIn {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  @keyframes fadeInGradient {
+    0% {
+      background: transparent;
+    }
+    100% {
+      background: linear-gradient(0deg, #e3331f, #711013);
+    }
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  70% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.item.animate {
+  animation: jump 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.open {
+  height: 539px !important;
+  .card__wrapper {
+    background: linear-gradient(
+      0deg,
+      rgba(113, 16, 19, 1),
+      rgba(227, 51, 31, 1)
+    );
+    opacity: 1;
+  }
+}
+
+.btn__wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 40px;
+  right: 40px;
+  z-index: 10;
+
+  .tl {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .tr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+  }
+  .bl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-90deg);
+  }
+  .br {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+  }
+  .btn {
+    cursor: pointer;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    padding: 16px 25px;
+    color: #f5f5f5;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+  }
+}

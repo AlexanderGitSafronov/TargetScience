@@ -1,0 +1,65 @@
+export const en = {
+  "High quality product and service": "High quality product and service",
+  "Visit the Target Science website": "Visit the Target Science website",
+  btn: {
+    bigBtnText: "Write to us",
+    bigBtnTextThank: "Home",
+    DiscussProject: " Discuss the project",
+  },
+  thank: {
+    textInfo1:
+      "Development of chatbots and implementation of artificial intelligence",
+    textInfo2: "SEO-optimization and promotion in search engines",
+    textInfo3: "Rent and sale of ready-made projects for arbitrage",
+    textInfo4: "Mobile development (iOS/Android)",
+    service: "What else can we do for you:",
+    thankTaxt: "Thank you <br/>for your application",
+    descPc:
+      "We will contact you within an hour during business hours. If you have any questions - write to us in Telegram - ",
+    descMb:
+      "We will contact you within an hour during business hours. <br/> If you have any questions - write to us in Telegram - ",
+    redBtn: "Write to us",
+  },
+  form: {
+    title: "Discuss the project",
+    name: "Enter Name",
+    telegram: "Enter Nickname in Telegram",
+    watsApp: "Enter WhatsApp Number",
+    email: "Enter E-mail",
+    selectError: "Enter description",
+    description: "Describe the task or leave your comment.",
+    btnCountFiles: "Uploaded {{filesLength}} file(s)",
+  },
+  formSelect: {
+    main: "Select the type of service*",
+    firstText: "Upload files (Up to 10 items)",
+    secondText: "Files (up to 10 items)",
+    upload: "Upload files",
+    count: "Uploaded {files.length} file(s)",
+    load: "Loading...",
+    options: {
+      design: "Design / Redesign",
+      websiteCreation: "Website Creation",
+      onlineStore: "Online Store",
+      branding: "Branding and Corporate Identity",
+      seo: "SEO Optimization",
+      advertisement: "Contextual / Targeted Advertising",
+      crm: "CRM Implementation",
+    },
+  },
+  formError: {
+    name: "Enter Name",
+    telegram: "Enter Nickname in Telegram",
+    watsApp: "Enter WhatsApp Number",
+    watsAppBig: "Enter the correct phone number in international format",
+    email: "Enter E-mail",
+    emailN: "Invalid email",
+    selectOptErr: "Select a service",
+    selectError: "Enter description",
+    description: "Describe the task or leave your comment.",
+    files: "Up to 10 files can be uploaded",
+  },
+  formBtn: {
+    send: "Send",
+  },
+};

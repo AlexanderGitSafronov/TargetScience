@@ -1,0 +1,51 @@
+.wrapper {
+  margin-top: 50px;
+  @media (max-width: 540px) {
+    margin-top: 0px;
+  }
+  .btn_newCard {
+    color: #fff;
+    background-color: #ab2c1e;
+    border-color: #ab2c1e;
+    font-weight: 600;
+    &:hover {
+      background-color: #84241c;
+      border-color: #84241c;
+    }
+  }
+}
+
+.form {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  @media (max-width: 540px) {
+    padding: 20px 12px;
+  }
+
+  .title {
+    font-size: 24px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .form__inputs {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 300px;
+    input {
+      &:focus {
+        // outline: 1px solid yellow;
+      }
+    }
+    textarea {
+      resize: none;
+      height: 200px;
+      &:focus {
+      }
+    }
+  }
+}

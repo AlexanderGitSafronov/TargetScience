@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 599px) {
+    padding-bottom: 40px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    @media (max-width: 1325px) {
+      row-gap: 20px;
+    }
+  }
+}

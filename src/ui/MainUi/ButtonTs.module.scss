@@ -1,0 +1,76 @@
+.btn__modal {
+  padding: 16px 25px;
+  white-space: nowrap;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ebebeb;
+  border-radius: 200px;
+  column-gap: 8px;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    background: linear-gradient(
+      0deg,
+      rgba(235, 235, 235, 0.15) 0%,
+      rgba(235, 235, 235, 0.3) 100%
+    );
+  }
+
+  .btn_Hover {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  &:hover .btn_notHover {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  &:hover .btn_Hover {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+  }
+  .btn_notHover {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .btn_notHoverr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+  }
+  @media (max-width: 622px) {
+    border: 2px solid #ebebeb;
+    width: 180px;
+    height: 57px;
+    font-size: 14px;
+  }
+  @media (max-width: 479px) {
+    border: 2px solid #ebebeb;
+    width: 160px;
+    height: 48px;
+    font-size: 14px;
+  }
+  .svgLogo {
+    @media (max-width: 479px) {
+      max-width: 22px;
+    }
+  }
+  svg {
+    @media (max-width: 479px) {
+      max-width: 12px;
+    }
+  }
+}

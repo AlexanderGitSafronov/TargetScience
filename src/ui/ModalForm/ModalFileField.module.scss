@@ -1,0 +1,67 @@
+.btn_file {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  position: relative;
+  height: 56px;
+  font-weight: 500;
+  .tl {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .tr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+  }
+  .bl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-90deg);
+  }
+  .br {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+  }
+  .angle {
+    path {
+      transition: all 0.3s ease;
+    }
+  }
+  &:hover {
+    .angle {
+      path {
+        fill: #fff;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+.fillEffect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #e3331f;
+  opacity: 1;
+  z-index: 1;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: width 0.4s ease, border-radius 0.4s ease, opacity 0.4s ease;
+}
+.fillEffectGrowing {
+  width: 100%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transition: width 0.4s ease, border-radius 0.4s ease, opacity 0.4s ease;
+}
+.fillEffectShrinking {
+  transition: none;
+  width: 0;
+  opacity: 0;
+}

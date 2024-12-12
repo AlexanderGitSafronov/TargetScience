@@ -1,0 +1,114 @@
+.btn {
+  position: relative;
+  width: 328px;
+  overflow: hidden;
+  padding: 16px 25px;
+  color: #f5f5f5;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  @media (max-width: 1599px) {
+    width: 228px;
+    font-size: 18px;
+  }
+
+  .btn_container span svg path {
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    color: #f5f5f5 !important;
+
+    transition: all 0.3s ease;
+    span {
+      path {
+        transition: all 0.3s ease;
+        fill: #f5f5f5 !important;
+      }
+    }
+  }
+
+  .fillEffect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #e3331f;
+    opacity: 0;
+    transform-origin: left;
+    transition: all 0.4s ease;
+    z-index: 1;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  &:hover .fillEffect {
+    width: 100%;
+    border-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    opacity: 1;
+  }
+
+  .tl {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .tr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+  }
+  .bl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-90deg);
+  }
+  .br {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+  }
+  .btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .tl,
+  .tr,
+  .bl,
+  .br {
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+
+  &:hover .tl {
+    top: 30%;
+    opacity: 0;
+  }
+
+  &:hover .tr {
+    top: 30%;
+    opacity: 0;
+  }
+
+  &:hover .bl {
+    bottom: -30%;
+    opacity: 0;
+  }
+
+  &:hover .br {
+    bottom: -30%;
+    opacity: 0;
+  }
+}

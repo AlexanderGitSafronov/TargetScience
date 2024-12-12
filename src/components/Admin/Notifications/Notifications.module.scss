@@ -1,0 +1,14 @@
+.wrapper {
+  position: absolute;
+  min-width: 200px;
+  min-height: 100px;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  @media (max-width: 991px) {
+    top: inherit;
+    bottom: 20px;
+  }
+  @media (max-width: 668px) {
+  }
+}
